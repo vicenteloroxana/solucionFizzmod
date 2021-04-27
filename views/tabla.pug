@@ -1,0 +1,17 @@
+h2(style="color:crimson;")="Historial"
+if productos.length
+    div(class="table-responsive")
+        table(class="table table-success")
+            tr(style="color: black;")
+                th="Nombre"
+                th="Precio"
+                th="Descripcion"
+                th="Foto"
+            each producto in productos                
+                tr
+                    td=producto.nombre                    
+                    td $ #{producto.precio}
+                    td=producto.descripcion
+                    td: img(src=producto.foto width='50px' alt=producto.nombre)
+else
+    h3(class="alert alert-danger")="no se encontraron datos"
