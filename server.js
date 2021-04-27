@@ -52,7 +52,7 @@ app.post('/set-correo', async (req,res) => {
 app.use('/productos', productosRouter)
 
 /* ----------- DEFINICION DEL PUERTO ------------------ */
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3001
 
 
 /* ----------- LISTEN DEL SERVIDOR ------------------ */

@@ -1,6 +1,3 @@
-// MONGO_DB_URI=mongodb+srv://userprueba:123@cluster0.0fnlt.mongodb.net/productosbd?retryWrites=true&w=majority
-// mongo "mongodb+srv://cluster0.0fnlt.mongodb.net/mibase" --username userprueba -p 123
-// MONGO_DB_URI = mongodb://localhost/mibase
 const mongoose = require('mongoose')
 
 const connectionString = process.env.MONGO_DB_URI
